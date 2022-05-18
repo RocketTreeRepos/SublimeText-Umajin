@@ -54,6 +54,14 @@
 			<string>constant.language.umajin.3</string>
 		</dict>
 		<dict>
+			<key>comment</key>
+			<string>Enums</string>
+			<key>match</key>
+			<string>::\w*\b</string>
+			<key>name</key>
+			<string>constant.language.umajin.3</string>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>\b(null)\b</string>
 			<key>name</key>
