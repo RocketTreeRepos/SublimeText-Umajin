@@ -1,0 +1,7 @@
+{
+	"cmd": "umajin start_server.u",
+	"working_dir": "$project_path",
+	"shell" : true,
+	"file_regex" : "^\\w+\t([^:]+):(\\d+)(?::(\\d+))?[^\t]*\t(.*)$",
+	"syntax" : "umajin_build.sublime-syntax"
+}
