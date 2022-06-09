@@ -1,0 +1,15 @@
+%YAML 1.2
+---
+name: Umajin compiler build
+scope: Umajin
+
+contexts: 
+  main:
+    - match: '^COMPILER_ERROR.*'
+      scope: invalid
+    - match: '^SCRIPT_INFO.*'
+      scope: string
+    - match: '^COMPILER_INFO.*'
+      scope: comment
+    - match: '^WARNING.*'
+      scope: keyword

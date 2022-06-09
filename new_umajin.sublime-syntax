@@ -1,0 +1,17 @@
+%YAML 1.2
+---
+name: New Umajin
+scope: Umajin
+
+contexts: 
+  main:
+    - match: '//.*'
+      scope: comment
+    - match: '\b(int|method|end)\b'
+      scope: keyword
+    - match: '\b(0(x|X)[0-9a-fA-F]+)|(([0-9]+\.?[0-9]*)|(\.[0-9]+))?\b'
+      scope: constant.numeric
+    - match: '\b(true|false)\b'
+      scope: constant.language  
+    - match: '^WARNING.*'
+      scope: keyword
